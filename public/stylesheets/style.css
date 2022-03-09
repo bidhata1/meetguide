@@ -831,3 +831,16 @@ img{
 
 
 /*======MEDIA QUERY ENDS====*/
+/*======CUSTOM CSS======*/
+.checked {
+    color: #F04C26;
+}
+.badge-certified{
+    background-color: green;
+}
+.badge-local{
+    background-color: orange;
+}
+.list-icon{
+    color: #f04c26;
+}
