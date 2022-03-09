@@ -7,6 +7,7 @@ let users = [
     rate:"20",
     address:"pokhara, lakeside 123",
     contact:"9860123456",
+
     isCertified: true, // false means local guide
     languages:["english","german"],
     reviews:
@@ -30,8 +31,17 @@ let users = [
     contact:"9860123456",
     isCertified: true, // false means local guide
     languages:["english"],
-    reviews:["wow", "bad","wow", "bad","wow", "bad"],
-
+ reviews:
+    [
+      {
+        reviewer:"email@email",
+        review:"very nice"
+      },
+      {
+        reviewer:"email2@email",
+        review:"very nice2"
+      }
+    ],
     description:"I love travelling and food and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla "
   },
   {
@@ -42,8 +52,24 @@ let users = [
     contact:"9860123456",
     isCertified: false, // false means local guide
     languages:["english","german"],
-    reviews:["wow", "bad"],
-    description:"I love travelling and food and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla "
+    reviews:
+    [
+      {
+        reviewer:"email@email",
+        review:"very nice",
+        src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ3U4t_8ZYQaCeEMDx1PgP3PVkr2BdbpxkFA&usqp=CAU"
+      },
+      {
+        reviewer:"email2@email",
+        review:"very nice2",
+        src:"https://www.pngkey.com/png/detail/114-1149878_setting-user-avatar-in-specific-size-without-breaking.png"
+      },
+      {
+        reviewer:"email2@email",
+        review:"very nice2",
+        src:"https://static.vecteezy.com/system/resources/thumbnails/004/607/806/small/man-face-emotive-icon-smiling-bearded-male-character-in-yellow-flat-illustration-isolated-on-white-happy-human-psychological-portrait-positive-emotions-user-avatar-for-app-web-design-vector.jpg"
+      }
+    ],    description:"I love travelling and food and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla and bla "
   },
 ]
 /* GET users listing. */

@@ -21,237 +21,312 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
-    <link rel='stylesheet' type='text/css' href="/stylesheets/bootstrap.min.css">
-
+    
     <!--  Font Awesome CSS -->
     <link rel='stylesheet' type='text/css' href="/stylesheets/font-awesome.min.css">
-
+    
     <link rel='stylesheet' type='text/css' href="/stylesheets/style.css">
-
     <!-- Custom CSS -->
+    <link rel='stylesheet' type='text/css' href="/stylesheets/bootstrap.min.css">
     <link rel='stylesheet' type='text/css' href="/stylesheets/blog-style.css">
 
+
     <!-- Latest compiled and minified JavaScript -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
 
 
 </head>
-
 <body class="single-page">
 
-    <section class="header" id="header">
-        <div class="navbar-option">
-            <div class="container">
-                <nav class="navbar navbar-default">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                        
-                        </button>
-                        <a class="navbar-brand" href="/index"><img src="/images/logo.png" alt="" /></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-left">
-                            <li><a href="/home">Home</a></li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/users">List</a></li>
-                            <li><a href="/gallery">Gallery</a></li>
-                            <li><a href="/contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </section>
-    <!-- Middle Wrapper Start Here-->
-    <section class="blog_wrapper">
-
+<!-- 
+Enjoy the code <3
+-->
+<section class="header" id="header">
+    <div class="navbar-option">
         <div class="container">
-            <div class="heading-top">
-                <h1>SINGLE USERS</h1>
-                <p>
-                    Welcome to users profile
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-md-9 col-sm-8">
-                    <div class="post_block">
-                        <div class="col-md-12">
-                            <img src="/images/post_img2.jpg" alt="">
-                            <div class="single-blog-content">
-                                <h2><%=user.name%></h2>
-
-                                <p> My name is Bidhata Pandey, i am a licensed tour guide since 2000 . I work as  private guide :</p>
-                                <div class="catageory">
-                                    <ul>
-                                        <li><a href="">MAY 28, 2015</a></li>
-                                        <li><a href="">By Admin</a></li>
-                                        <li><a href="">3 Comments</a></li>
-                                    </ul>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    
-
-                    <!--Related Post-->
-                  
-                    <div class="related_post">
-                        <h2>Related Post</h2>
-                        <div class="col-md-4 col-sm-4">
-                            <img src="/images/related+post.jpg">
-                            <h3>she was Awesome</h3>
-                           
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <img src="/images/related+post.jpg">
-                            <h3>He was Helpful. I feel confortable with him</h3>
-                            
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <img src="/images/related+post.jpg">
-                            <h3>She is honest with proper knowledge of her local  places </h3>
-                           
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-
-                   </div>
-            
-
-                <!--Sidebar Start Here-->
-                <div class="col-md-3 col-sm-4">
-                    <div class="sidebar">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                            <button type="submit" class="submit">Go</button>
-                        </div>
-
-                        <div class="widget">
-                            <h2 class="heading">Catageory</h2>
-
-                            <ul>
-                                <li><a href="">Travel</a></li>
-                                <li><a href="">Travel</a></li>
-                                <li><a href="">Travel</a></li>
-                                <li><a href="">Travel</a></li>
-                            </ul>
-
-                        </div>
-
-
-                        <div class="widget">
-                            <h2 class="heading">Archive</h2>
-
-                            <ul>
-                                <li><a href="">Travel</a></li>
-                                <li><a href="">Travel</a></li>
-                                <li><a href="">Travel</a></li>
-                                <li><a href="">Travel</a></li>
-                            </ul>
-
-                        </div>
-
-
-                        <div class="widget">
-                            <h2 class="heading">Recent Post</h2>
-
-                            <ul>
-                                <li><a href="">Travel</a></li>
-                                <li><a href="">Travel</a></li>
-                                <li><a href="">Travel</a></li>
-                                <li><a href="">Travel</a></li>
-                            </ul>
-
-                        </div>
-
-
-                    </div>
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="/index"><img src="/images/logo.png" alt="" /></a>
                 </div>
-                <!--Sidebar End Here-->
-
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </section>
-    <!-- Middle Wrapper End Here-->
-    <section class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-6">
-                        <div class="footer-content">
-                            <div class="footer-logo">
-                                <img src="/images/footer-logo.png" alt="" />
-                            </div>
-                            <div class="footer-text">
-                                <p>
-                                    
-                                </p>
-                            </div>
-                            <div class="footer-address">
-                                <ul>
-                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> Pokhara 33700
-                                    </li>
-
-                                    <li>
-                                        <i class="fa fa-phone" aria-hidden="true"></i> +9779815107787
-
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-envelope" aria-hidden="true"></i> demo@gmail.com
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="footer-content">
-                            
-                            
-                            <div class="social-icons">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
-
-                                       FACEBOOK</a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
-
-                                       TWITTER</a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
-
-                                   LINKEDIN</a></li>
-                                </ul>
-                            </div>
-                            <p class="copyright">
-                                Copyright 2018. Designed by Bidhta, Binita , Dikshya |  <a href="https://www.wlit.org.np/">Wlit Nepal</a>
-                            </p>
-                        </div>
-                    </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/users">List</a></li>
+                        <li><a href="/gallery">Gallery</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!--PRE LOADER HERE-->
-    <div id="pre-loader">
-        <div class="spinner">
-            <div class="double-bounce1"></div>
-            <div class="double-bounce2"></div>
+            </nav>
         </div>
     </div>
+</section>
+<section class="blog_wrapper">
 
-    <!-- Custom js -->
-    <script src="assets/custom/js/custom.js"></script>
+<div class="container user-header-wrapper">
+    <div class="user-header-inner">
+      <div class="uh-left">
+        <div class="uh-image", style="padding-top: 20px;">
+          <img class="uh-image-inner" src="https://i.imgur.com/Qv1WDJq.jpg" alt="">
+          <div class="gradient"></div>
+        </div>
+      </div>
+      <div class="uh-right">
+        <div class="user-info">
+            <h2 style="color:#f04c25; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+              <%=user.name%>
+              <svg class="uname-verified" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1350.03 1326.16">
+                                  <defs><style>.cls-11{fill:var(--green);}.cls-12{fill:#ffffff;}</style></defs><title>verified</title>
+                                  <g id="Layer_3" data-name="Layer 3">
+                                      <polygon class="cls-11" points="0 747.37 120.83 569.85 70.11 355.04 283.43 292.38 307.3 107.41 554.93 107.41 693.66 0 862.23 120.83 1072.57 126.8 1112.84 319.23 1293.35 399.79 1256.05 614.6 1350.03 793.61 1197.87 941.29 1202.35 1147.15 969.64 1178.48 868.2 1326.16 675.02 1235.17 493.77 1315.72 354.99 1133.73 165.58 1123.29 152.16 878.64 0 747.37"/></g>
+                                  <g id="Layer_2" data-name="Layer 2">
+                                      <path class="cls-12" d="M755.33,979.23s125.85,78.43,165.06,114c34.93-36,234.37-277.22,308.24-331.94,54.71,21.89,85,73.4,93,80.25-3.64,21.89-321.91,418.58-368.42,445.94-32.74-3.84-259-195.16-275.4-217C689.67,1049.45,725.24,1003.85,755.33,979.23Z" transform="translate(-322.83 -335.95)"/></g>
+                              </svg>
+                              
+                            </h2>
+                        </div>
+                        <h5 style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+                            <i class="fa fa-map-marker list-icon"></i>  <%=user.address%></h5> 
+        
+      </div>
+    </div>
+    </div>
+    <div class="user-stories">
+    <div class="user-stories-inner">
+        <%user.interests && user.interests.forEach(int=>{%>
+      <div class="story-wrapper">
+        <div class="story-inner">
+          <img class="story-img" src="https://images.unsplash.com/photo-1588110679566-158c6dea107c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1990&q=80" alt="">
+          <div class="gradient"></div>
+        </div>
+        <h2><%=int%> ✌</h2>
+      </div>
+  <%})%>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 " style=" font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: left; padding: 20px">
+            <h4 class="user-info-heading">About me:</h4>
+                <h5 style="font-weight: normal;">
+                    <%=user.description%></h5>    
+            <span style="padding: 10px;"></span> 
+            <h4 class="user-info-heading">Contact:</h4>
+            <h5 style="font-weight: normal;">
+                <%=user.contact%></h5> 
+                <span style="padding: 10px;"></span> 
+                <h4 class="user-info-heading">Languages known:</h4>
+                <h5 style="font-weight: normal;">
+                    <%user.languages.forEach(lan=>{%>
+                        <span class="badge badge-certified"><%=lan%></span>
+                        <%})%>
+                    </h5> 
+                    <span style="padding: 10px;"></span> 
 
+            </div>
+            <div class="col-md-5 post_block" style=" font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: left; padding: 20px">
+                <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <h6 style="text-align: left; margin-top: -10px;"><%= user.reviews && user.reviews.length ? user.reviews.length : 0 %> reviews</h6>
+               </p>
+               <span style="padding: 10px;"></span> 
+
+                <h4 class="user-info-heading">Rate: <span style="color: #414141;">$<%=user.rate%>/hr </span></h4> 
+                <div class="row">
+                    
+                    <div class="col-lg-6">
+                       
+                      <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon2">From</span>
+
+                        <input type="date" class="form-control" placeholder="From">
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                      <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon2">To</span>
+
+                        <input type="date" class="form-control" placeholder="To">
+                        
+                      </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                  </div><!-- /.row -->
+                  <span style="padding: 10px;"></span> 
+
+                  <select class="form-control form-control-lg">
+                    <option>Sunday</option>
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                    <option>Thursday</option>
+                    <option>Friday</option>
+                    <option>Saturday</option>
+                  </select>
+                    <button type="button" class="btn btn-danger bookme">Book me</button>
+            </div>
+        </div>
+
+    
+    </div>
+   
+    <div class="space"></div>
+    <section class="blog_wrapper container">
+        
+        <div class="row">
+            <h4 class="user-info-heading" style="text-align: center;">What people say about me:</h4>
+            <div class="col-md-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>   
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="item carousel-item active">
+                        <div class="row">
+                            <%user.reviews.forEach(r=>{%>
+                            <div class="col-sm-4">
+                                <div class="thumb-wrapper">
+                                    <div class="img-box">
+                                        <img src="<%=r.src%>" alt="">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <h4><%=r.email%></h4>
+                                        <h5><%=r.review%></h5>>
+                                        <div class="star-rating">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>						
+                                </div>
+                            </div>
+                          <%})%>
+                        </div>
+                    </div>
+                    <div class="item carousel-item">
+                        <div class="row">
+                           					
+                        </div>
+                    </div>
+                    <div class="item carousel-item">
+                        <div class="row">
+                           					
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    <section>
+
+</section>
 </body>
+    <script>
+        $("#img1").on({
+    mouseenter: function () {
+        $("#iov1").css("opacity", "1");
+    },
+    mouseleave: function () {
+        $("#iov1").css("opacity", "0");
+    }
+});
+$('#img1').click(function(){
 
+    $('#imgblock1').css("display", "flex");
+
+});
+$('#imgblockbc1').click(function(){
+
+    $('#imgblock1').css("display", "none");
+
+});
+$("#img2").on({
+    mouseenter: function () {
+        $("#iov2").css("opacity", "1");
+    },
+    mouseleave: function () {
+        $("#iov2").css("opacity", "0");
+    }
+});
+$("#img3").on({
+    mouseenter: function () {
+        $("#iov3").css("opacity", "1");
+    },
+    mouseleave: function () {
+        $("#iov3").css("opacity", "0");
+    }
+});
+$("#img4").on({
+    mouseenter: function () {
+        $("#iov4").css("opacity", "1");
+    },
+    mouseleave: function () {
+        $("#iov4").css("opacity", "0");
+    }
+});
+$("#img5").on({
+    mouseenter: function () {
+        $("#iov5").css("opacity", "1");
+    },
+    mouseleave: function () {
+        $("#iov5").css("opacity", "0");
+    }
+});
+$("#img6").on({
+    mouseenter: function () {
+        $("#iov6").css("opacity", "1");
+    },
+    mouseleave: function () {
+        $("#iov6").css("opacity", "0");
+    }
+});
+$("#img7").on({
+    mouseenter: function () {
+        $("#iov7").css("opacity", "1");
+    },
+    mouseleave: function () {
+        $("#iov7").css("opacity", "0");
+    }
+});
+$("#img8").on({
+    mouseenter: function () {
+        $("#iov8").css("opacity", "1");
+    },
+    mouseleave: function () {
+        $("#iov8").css("opacity", "0");
+    }
+});
+$("#img9").on({
+    mouseenter: function () {
+        $("#iov9").css("opacity", "1");
+    },
+    mouseleave: function () {
+        $("#iov9").css("opacity", "0");
+    }
+});
+    </script>
 </html>

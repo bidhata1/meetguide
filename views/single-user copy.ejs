@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Single user</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google font here -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel='stylesheet' type='text/css' href="/stylesheets/bootstrap.min.css">
+
+    <!--  Font Awesome CSS -->
+    <link rel='stylesheet' type='text/css' href="/stylesheets/font-awesome.min.css">
+
+    <link rel='stylesheet' type='text/css' href="/stylesheets/style.css">
+
+    <!-- Custom CSS -->
+    <link rel='stylesheet' type='text/css' href="/stylesheets/blog-style.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body class="single-page">
+
+    <section class="header" id="header">
+        <div class="navbar-option">
+            <div class="container">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="/index"><img src="/images/logo.png" alt="" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="/home">Home</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/users">List</a></li>
+                            <li><a href="/gallery">Gallery</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- Middle Wrapper Start Here-->
+    <section class="blog_wrapper">
+
+        <div class="container">
+            <div class="heading-top">
+                <h1><%=user.name.toUpperCase()%></h1>
+                <p>
+                    <%=user.address%>
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="post_block">
+                        <!-- <div class="col-md-12"> -->
+                            <img src="/images/post_img2.jpg" alt="">
+                            <!-- <div class="single-blog-content"> -->
+                                <h2><%=user.name%></h2>
+
+                                <p> My name is Bidhata Pandey, i am a licensed tour guide since 2000 . I work as  private guide :</p>
+                                <div class="catageory">
+                                    <ul>
+                                        <li><a href="">MAY 28, 2015</a></li>
+                                        <li><a href="">By Admin</a></li>
+                                        <li><a href="">3 Comments</a></li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <div class="clearfix"></div>
+                    </div>
+
+                    
+
+                    <!--Related Post-->
+                  
+                    <div class="related_post">
+                        <h2>Related Post</h2>
+                        <div class="col-md-4 col-sm-4">
+                            <img src="/images/related+post.jpg">
+                            <h3>she was Awesome</h3>
+                           
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <img src="/images/related+post.jpg">
+                            <h3>He was Helpful. I feel confortable with him</h3>
+                            
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <img src="/images/related+post.jpg">
+                            <h3>She is honest with proper knowledge of her local  places </h3>
+                           
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+
+                   </div>
+            
+
+                <!--Sidebar Start Here-->
+                <!-- <div class="col-md-3 col-sm-4">
+                    <div class="sidebar">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button type="submit" class="submit">Go</button>
+                        </div>
+
+                        <div class="widget">
+                            <h2 class="heading">Catageory</h2>
+
+                            <ul>
+                                <li><a href="">Travel</a></li>
+                                <li><a href="">Travel</a></li>
+                                <li><a href="">Travel</a></li>
+                                <li><a href="">Travel</a></li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="widget">
+                            <h2 class="heading">Archive</h2>
+
+                            <ul>
+                                <li><a href="">Travel</a></li>
+                                <li><a href="">Travel</a></li>
+                                <li><a href="">Travel</a></li>
+                                <li><a href="">Travel</a></li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="widget">
+                            <h2 class="heading">Recent Post</h2>
+
+                            <ul>
+                                <li><a href="">Travel</a></li>
+                                <li><a href="">Travel</a></li>
+                                <li><a href="">Travel</a></li>
+                                <li><a href="">Travel</a></li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                </div> -->
+                <!--Sidebar End Here-->
+
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </section>
+    <!-- Middle Wrapper End Here-->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <div class="footer-content">
+                            <div class="footer-logo">
+                                <img src="/images/footer-logo.png" alt="" />
+                            </div>
+                            <div class="footer-text">
+                                <p>
+                                    
+                                </p>
+                            </div>
+                            <div class="footer-address">
+                                <ul>
+                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> Pokhara 33700
+                                    </li>
+
+                                    <li>
+                                        <i class="fa fa-phone" aria-hidden="true"></i> +9779815107787
+
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope" aria-hidden="true"></i> demo@gmail.com
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-content">
+                            
+                            
+                            <div class="social-icons">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+
+                                       FACEBOOK</a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+
+                                       TWITTER</a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+
+                                   LINKEDIN</a></li>
+                                </ul>
+                            </div>
+                            <p class="copyright">
+                                Copyright 2018. Designed by Bidhta, Binita , Dikshya |  <a href="https://www.wlit.org.np/">Wlit Nepal</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--PRE LOADER HERE-->
+    <div id="pre-loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+
+    <!-- Custom js -->
+    <script src="assets/custom/js/custom.js"></script>
+
+</body>
+
+</html>
