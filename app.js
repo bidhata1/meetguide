@@ -8,7 +8,9 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 var mongoose=require('mongoose');
+mongoose.set("strictQuery", true);
 mongoose.connect('mongodb://localhost/meetguide');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
