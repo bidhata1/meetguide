@@ -83,12 +83,22 @@ router.get("/users/:id", function(req,res,next){
 })
 
 /* GET home page. */
+/*
 router.get('/home', function(req, res, next) {
   res.render('home', { title: 'Express' });
 });
-
+*/
 router.get('/', function(req, res, next) {
   res.render('home');
+});
+router.get('/about', function(req, res, next) {
+  res.render('about');
+});
+router.get('/contact', function(req, res, next) {
+  res.render('contact');
+});
+router.get('/gallery', function(req, res, next) {
+  res.render('gallery');
 });
 
 

@@ -35,10 +35,7 @@
     <script src="stylesheets/js/jquery.min.js"></script>
     <script src="stylesheets/js/bootstrap.min.js"></script>
 
-
-
 </head>
-
 <body>
     <section class="header" id="header">
         <div class="navbar-option">
@@ -65,104 +62,95 @@
             </div>
         </div>
     </section>
-    <!-- Middle Wrapper Start Here-->
-
-    <section class="blog_wrapper">
-
+    <section class="about_wrapper">
         <div class="container">
-            <div class="heading-top">
-                <h1>Explore with  guides</h1>
-                
-            </div>
             <div class="row">
-                <div class="col-md-9 col-sm-8">
-                    <%users.forEach(user=>{%>
-                    <div class="post_block">
-                        <div class="col-md-12">
-                            <div class="col-md-5">
-                                <img src="images/bidhata.jpg" alt="">
-                            </div>
-                            <div class="col-md-7">
-                                <h2><%=user.name%> 
-                                    <%if(user.isCertified){%>
-                                        <span class="badge badge-certified">Certified</span></h2>
-                                    <%} else{%>
-                                        <span class="badge badge-local">Local</span></h2>
-                                    <%}%>
+                <div class="col-md-6 col-sm-6">
+                    <h2>Who we are</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat n <br> <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat n </p>
+                    <div style="height:30px;"></div>
+                    <img src="images/banner.jpg">
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <h2>What We do</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat n <br> <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat n </p>
+                    <div style="height:30px;"></div>
+                    <img src="images/banner.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                <p> <i class="fa fa-map-marker list-icon"></i>
-                                    <%=user.address%> </p>
-                                <p> <i class="fa fa-phone list-icon"></i>
-                                     <%=user.contact%> 
-                                </p>
-                               <p>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <h6 style="text-align: left;"><%= user.reviews && user.reviews.length ? user.reviews.length : 0 %> reviews</h6>
-                               </p>
-                               <!-- <p>Languages:</p>
-                                <div class="catageory" style="text-align: left; margin-top: -30px;">
-                                        <ul>
-                                            <li>MAY 28, 2015</a></li>
-                                            <li>MAY 28, 2015</a></li>
-                                            <li>By Admin</a></li>
-                                            <li>3 Comments</a></li>
-                                        </ul>
-                                        <div class="clearfix"></div>
-                                     </div> -->
+    <section class="team_wrapper">
+        <div class="container">
+            <div class="row">
+                <h2>Our Team</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <br> voluptate velit esse cillum dolore eu fugiat n </p>
+                <div style="height:50px;"></div>
 
-                                <a href="users/<%=user._id%>" class="read_more">Read More</a>
-                            </div>
+                <div class="col-md-6 col-sm-6">
+                    <img src="images/trail.jpg">
+                    <div class="team_heading">
+                        <div class="pull-left">
+                            <h3>John Smith</h3>
                         </div>
+                        <div class="pull-right"><span>Company Manager</span></div>
                         <div class="clearfix"></div>
                     </div>
-                    <%})%>
-                   
-                    <div class="pagination-container text-center">
-                        <ul class="pagination">
-                            <li class="previous"><a href="#">Previous</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li class="next"><a href="#">Next</a></li>
-                        </ul>
-                    </div>
+                    <div style="height:25px;"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
 
-                <!--Sidebar Start Here-->
-                <div class="col-md-3 col-sm-4">
-                    <div class="sidebar">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                            <button type="submit" class="submit">Go</button>
+                <div class="col-md-6 col-sm-6">
+                    <img src="images/trail.jpg">
+                    <div class="team_heading">
+                        <div class="pull-left">
+                            <h3>John Smith</h3>
                         </div>
-
-                        <div class="widget">
-                            <h2 class="heading">Sort By</h2>
-
-                            <ul>
-                                <li><a href="">Location</a></li>
-                                <li><a href="">Rating</a></li>
-                                <li><a href="">Certification</a></li>
-                            </ul>
-
-                        </div>
-
+                        <div class="pull-right"><span>Company Manager</span></div>
+                        <div class="clearfix"></div>
                     </div>
+                    <div style="height:25px;"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <!--Sidebar End Here-->
+
+
+                <div class="col-md-6 col-sm-6">
+                    <img src="images/trail.jpg">
+                    <div class="team_heading">
+                        <div class="pull-left">
+                            <h3>John Smith</h3>
+                        </div>
+                        <div class="pull-right"><span>Company Manager</span></div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div style="height:25px;"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <img src="images/trail.jpg">
+                    <div class="team_heading">
+                        <div class="pull-left">
+                            <h3>John Smith</h3>
+                        </div>
+                        <div class="pull-right"><span>Company Manager</span></div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div style="height:25px;"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
 
             </div>
         </div>
-        <div class="clearfix"></div>
     </section>
 
-    <!-- Middle Wrapper End Here-->
+
+
+
+
+
+
 
     <section class="footer">
         <div class="container">
@@ -200,7 +188,7 @@
                             
                            
                             <div class="social-icons">
-                                <ul>
+                                 <ul>
                                     <li><a href="https://www.facebook.com/bidhata.pandey.3"><i class="fa fa-facebook" aria-hidden="true"></i>
 
                                        FACEBOOK</a></li>
@@ -233,6 +221,6 @@
 
     <!-- Custom js -->
     <script src="stylesheets/js/custom.js"></script>
-</body>
 
+</body>
 </html>

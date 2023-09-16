@@ -9,7 +9,7 @@ var indexRouter = require('./routes/index');
 var app = express();
 var mongoose=require('mongoose');
 mongoose.set("strictQuery", true);
-mongoose.connect('mongodb://localhost/meetguide');
+mongoose.connect('mongodb://127.0.0.1:27017');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

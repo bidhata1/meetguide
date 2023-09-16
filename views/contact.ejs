@@ -28,6 +28,7 @@
     <link rel='stylesheet' type='text/css' href="stylesheets/font-awesome.min.css">
     
     <link rel='stylesheet' type='text/css' href="stylesheets/style.css">
+    <link rel='stylesheet' type='text/css' href="stylesheets/contact.css">
     <!-- Custom CSS -->
     <link rel='stylesheet' type='text/css' href="stylesheets/blog-style.css">
 
@@ -35,10 +36,7 @@
     <script src="stylesheets/js/jquery.min.js"></script>
     <script src="stylesheets/js/bootstrap.min.js"></script>
 
-
-
 </head>
-
 <body>
     <section class="header" id="header">
         <div class="navbar-option">
@@ -65,105 +63,40 @@
             </div>
         </div>
     </section>
-    <!-- Middle Wrapper Start Here-->
-
-    <section class="blog_wrapper">
-
-        <div class="container">
-            <div class="heading-top">
-                <h1>Explore with  guides</h1>
-                
-            </div>
-            <div class="row">
-                <div class="col-md-9 col-sm-8">
-                    <%users.forEach(user=>{%>
-                    <div class="post_block">
-                        <div class="col-md-12">
-                            <div class="col-md-5">
-                                <img src="images/bidhata.jpg" alt="">
-                            </div>
-                            <div class="col-md-7">
-                                <h2><%=user.name%> 
-                                    <%if(user.isCertified){%>
-                                        <span class="badge badge-certified">Certified</span></h2>
-                                    <%} else{%>
-                                        <span class="badge badge-local">Local</span></h2>
-                                    <%}%>
-
-                                <p> <i class="fa fa-map-marker list-icon"></i>
-                                    <%=user.address%> </p>
-                                <p> <i class="fa fa-phone list-icon"></i>
-                                     <%=user.contact%> 
-                                </p>
-                               <p>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <h6 style="text-align: left;"><%= user.reviews && user.reviews.length ? user.reviews.length : 0 %> reviews</h6>
-                               </p>
-                               <!-- <p>Languages:</p>
-                                <div class="catageory" style="text-align: left; margin-top: -30px;">
-                                        <ul>
-                                            <li>MAY 28, 2015</a></li>
-                                            <li>MAY 28, 2015</a></li>
-                                            <li>By Admin</a></li>
-                                            <li>3 Comments</a></li>
-                                        </ul>
-                                        <div class="clearfix"></div>
-                                     </div> -->
-
-                                <a href="users/<%=user._id%>" class="read_more">Read More</a>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <%})%>
-                   
-                    <div class="pagination-container text-center">
-                        <ul class="pagination">
-                            <li class="previous"><a href="#">Previous</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li class="next"><a href="#">Next</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--Sidebar Start Here-->
-                <div class="col-md-3 col-sm-4">
-                    <div class="sidebar">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                            <button type="submit" class="submit">Go</button>
-                        </div>
-
-                        <div class="widget">
-                            <h2 class="heading">Sort By</h2>
-
-                            <ul>
-                                <li><a href="">Location</a></li>
-                                <li><a href="">Rating</a></li>
-                                <li><a href="">Certification</a></li>
-                            </ul>
-
-                        </div>
-
-                    </div>
-                </div>
-                <!--Sidebar End Here-->
-
-            </div>
+</section>
+<section class="contact-form">
+    <div class="container">
+        <div class="contact-heading">
+            <h1>Contact Us</h1>
+            <h3>You can send your feedback or report any issues by submitting the form.</h3>
         </div>
-        <div class="clearfix"></div>
-    </section>
+        <form id="contact" action="" method="post">
+            <h3>Leave your query here</h3>
+            <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+        </form>
 
-    <!-- Middle Wrapper End Here-->
+    </div>
 
+</section>
+
+    
     <section class="footer">
         <div class="container">
             <div class="row">
@@ -234,5 +167,4 @@
     <!-- Custom js -->
     <script src="stylesheets/js/custom.js"></script>
 </body>
-
 </html>
